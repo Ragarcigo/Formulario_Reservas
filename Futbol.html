@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Reserva de Pistas">
+    <meta property="og:description" content="Reserva de Pistas">
+    <title>Reserva Fútbol</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabecera -->
+        <header class="my-4 text-center">
+            <h1>Reserva de Fútbol</h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="Formulario.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Futbol.html">Fútbol</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tenis.html">Tenis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Padel.html">Pádel</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Carrusel de imágenes de pistas -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Images/cesped_natural.jpg" class="d-block w-100" alt="Natural">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Césped Natural</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/cesped_artificial.webp" class="d-block w-100" alt="Artificial">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Césped Artificial</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/pista_azul.jpg" class="d-block w-100" alt="Futbol-Sala">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fútbol Sala</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Formulario de reserva -->
+        <h2 class="mt-5 text-center">Reserva tu Pista</h2>
+        <form action="procesar_reserva.php" method="post">
+            <div class="mb-3">
+                <label for="tipo_pista" class="form-label">Tipo de Pista</label>
+                <select class="form-select" id="tipo_pista" name="tipo_pista">
+                    <option value="Natural">Césped Natural</option>
+                    <option value="Artificial">Césped Artificial</option>
+                    <option value="Futbol-Sala">Fútbol Sala</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="hora" name="hora" required>
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary w-100">Reservar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta poperty="og:title" content="Reserva de Pistas">
+    <meta poperty="og:description" content="Reserva de Pistas">    
+    <title>Reserva de Pistas</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #444;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+        .Futbol, .Tenis, .Padel{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            width: 80%;
+            margin: 1em auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .Futbol:hover, .Tenis:hover, .Padel:hover{
+            background-color: #555;
+        }
+        h2{
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            background-color: #333;
+            padding: 0.7em 1.5em;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        a:hover{
+            background-color: #555;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <section id="Eleccion de deporte">
+            <h1>RESERVA TU PISTA</h1>
+            <div class="Futbol">
+                <h2>Fútbol</h2>
+                <p>Reserva tu pista de fútbol</p>
+                <a href="Futbol.html">Reservar</a>
+            </div>
+            <div class="Tenis">
+                <h2>Tenis</h2>
+                <p>Reserva tu pista de Tenis</p>
+            <a href="Tenis.html">Reservar</a>
+            </div>
+            <div class="Padel">
+                <h2>Pádel</h2>
+                <p>Reserva tu pista de Pádel</p>
+                <a href="Padel.html">Reservar</a>
+            </div>
+
+        </section>
+    </header>
+</body>
+
+</html>
